@@ -13,7 +13,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="pt-40 sm:pt-36 pb-16 sm:pb-20 bg-gradient-to-br from-white to-[#F5F3EF]">
+    <section className="pt-28 sm:pt-32 lg:pt-36 pb-14 sm:pb-20 bg-gradient-to-br from-white to-[#F5F3EF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Left Content */}
@@ -22,7 +22,7 @@ export default function HeroSection() {
             animate={fadeInLeft().whileInView}
             transition={fadeInLeft().transition}
           >
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-gray-900 mb-5 sm:mb-6 leading-tight">
+            <h1 className="text-[clamp(1.75rem,6vw,3.75rem)] font-semibold text-gray-900 mb-5 sm:mb-6 leading-[1.15]">
               Natural Healing Through Ancient Precision
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-7 sm:mb-8 leading-relaxed">

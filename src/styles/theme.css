@@ -126,6 +126,11 @@
 
   body {
     @apply bg-background text-foreground;
+    overflow-x: clip;
+  }
+
+  #root {
+    overflow-x: clip;
   }
 
   /**

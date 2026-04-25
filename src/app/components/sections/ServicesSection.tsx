@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
 import { whatsappHref } from '../../constants/contact';
 import { fadeInUp } from './sectionMotion';
@@ -94,9 +93,7 @@ export default function ServicesSection() {
                 <div className="absolute inset-0 bg-[#7AA98C]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-lg font-medium text-white leading-snug">
-                    {service.title}
-                  </h3>
+                  <h3 className="text-lg font-medium text-white leading-snug">{service.title}</h3>
                 </div>
               </motion.a>
             ))}

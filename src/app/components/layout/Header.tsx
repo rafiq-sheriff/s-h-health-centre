@@ -65,9 +65,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
           <div className="flex items-center">
-            <a href="#home" aria-label="S.H. Health Centre Home" className="inline-flex items-center gap-3">
+            <a href="#home" aria-label="S.H. Health Centre Home" className="inline-flex items-center gap-2 sm:gap-3">
               <img src="/logo.svg" alt="S.H. Health Centre" className="h-10 w-auto sm:h-12" />
-              <span className="text-base font-semibold text-gray-900 sm:text-xl">S.H. Health Centre</span>
+              <span className="hidden min-[380px]:inline text-sm font-semibold text-gray-900 sm:text-xl">
+                S.H. Health Centre
+              </span>
             </a>
           </div>
 
@@ -129,7 +131,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   aria-current={isActive ? 'page' : undefined}
-                  className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                  className={`min-h-11 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
                     isActive
                       ? 'bg-[#7AA98C]/15 text-[#5f8b71]'
                       : 'text-gray-700 hover:bg-[#7AA98C]/10 hover:text-[#6a9879]'

@@ -7,7 +7,6 @@ import {
   FinalCTA,
   HeroSection,
   ServicesSection,
-  StatsSection,
   TestimonialsSection,
   UniqueApproach,
   WhyChooseUs,
@@ -20,7 +19,7 @@ import {
 export default function App() {
   return (
     <div
-      className="min-h-screen bg-white"
+      className="min-h-screen bg-white overflow-x-clip"
       style={{ fontFamily: 'Inter, sans-serif' }}
     >
       <Header />
