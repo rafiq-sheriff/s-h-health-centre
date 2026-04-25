@@ -56,7 +56,7 @@ export default function ServicesSection() {
   return (
     <section id="services" className="py-20 bg-gradient-to-br from-white to-[#F5F3EF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div {...fadeInUp()} className="grid lg:grid-cols-2 gap-8 items-end mb-12 sm:mb-16">
+        <motion.div {...fadeInUp()} className="gap-8 items-end mb-12 sm:mb-16">
           <div>
             <div className="inline-block px-4 py-2 bg-[#7AA98C]/10 rounded-full mb-6">
               <span className="text-[#7AA98C] font-medium">Our Services</span>
@@ -66,17 +66,7 @@ export default function ServicesSection() {
             </h2>
           </div>
 
-          <div className="lg:justify-self-end lg:max-w-xl">
-            <a
-              href={whatsappHref()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-full sm:w-auto justify-center items-center gap-2 px-8 py-4 bg-[#25D366] text-white rounded-full hover:bg-[#20bd5a] transition-all hover:shadow-lg text-center font-medium"
-            >
-              Book a consultation
-              <ArrowRight className="w-4 h-4" />
-            </a>
-          </div>
+          
         </motion.div>
 
         <div className="overflow-hidden">

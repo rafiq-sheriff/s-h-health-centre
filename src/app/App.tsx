@@ -31,7 +31,7 @@ export default function App() {
         <AboutSection />
         <UniqueApproach />
         <DoctorProfile />
-        <StatsSection />
+        
         <ServicesSection />
         
         <WhyChooseUs />

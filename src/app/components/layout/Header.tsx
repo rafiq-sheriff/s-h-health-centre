@@ -1,7 +1,10 @@
-import { Phone } from 'lucide-react';
+import { useState } from 'react';
+import { Menu, Phone, X } from 'lucide-react';
 import { PHONE_TEL } from '../../constants/contact';
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const navLinks = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
@@ -20,7 +23,7 @@ export default function Header() {
               <span className="text-base font-semibold text-gray-900 sm:text-xl">S.H. Health Centre</span>
             </a>
           </div>
-          
+
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a key={link.href} href={link.href} className="text-gray-600 hover:text-[#7AA98C] transition-colors">
@@ -29,26 +32,52 @@ export default function Header() {
             ))}
           </nav>
 
-          <a 
+          <a
             href={PHONE_TEL} 
-            className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-[#7AA98C] text-white rounded-full hover:bg-[#6a9879] transition-colors"
+            className="hidden sm:inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-[#7AA98C] text-white rounded-full hover:bg-[#6a9879] transition-colors"
           >
             <Phone className="w-4 h-4" />
             <span className="hidden sm:inline">Call Now</span>
           </a>
+
+          <button
+            type="button"
+            className="md:hidden inline-flex items-center justify-center rounded-md border border-gray-200 p-2 text-gray-700 hover:bg-gray-50 transition-colors"
+            aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          >
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
 
-        <nav className="md:hidden pb-3">
-          <div className="flex gap-3 overflow-x-auto">
+        <nav
+          id="mobile-navigation"
+          className={`md:hidden overflow-hidden transition-all duration-200 ${
+            isMobileMenuOpen ? 'max-h-96 pb-4' : 'max-h-0'
+          }`}
+        >
+          <div className="flex flex-col gap-2 rounded-xl border border-gray-100 bg-white p-3 shadow-sm">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="shrink-0 rounded-full border border-[#7AA98C]/20 px-3 py-1.5 text-sm text-gray-700 hover:bg-[#7AA98C]/10 transition-colors"
+                className="rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-[#7AA98C]/10 hover:text-[#6a9879] transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
               </a>
             ))}
+
+            <a
+              href={PHONE_TEL}
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#7AA98C] px-4 py-2.5 text-sm font-medium text-white hover:bg-[#6a9879] transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <Phone className="h-4 w-4" />
+              <span>Call Now</span>
+            </a>
           </div>
         </nav>
       </div>

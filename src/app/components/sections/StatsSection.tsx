@@ -107,7 +107,7 @@ export default function StatsSection() {
   const sharedProgress = useSharedCounterProgress({ start: isSectionInView });
 
   return (
-    <section ref={sectionRef} className="bg-white ">
+    <section ref={sectionRef} className="">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {STATS.map((stat, index) => (

@@ -2,10 +2,11 @@ import { motion } from 'motion/react';
 import { GraduationCap, Award, BadgeCheck, Heart } from 'lucide-react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
 import { fadeInUp } from './sectionMotion';
+import StatsSection from './StatsSection';
 
 export default function DoctorProfile() {
   return (
-    <section id="doctor" className="py-20 bg-white">
+    <section id="doctor" className="pt-20 pb-10 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div {...fadeInUp()} className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-[#7AA98C]/10 rounded-full mb-6">
@@ -94,6 +95,9 @@ export default function DoctorProfile() {
             </div>
           </div>
         </motion.div>
+      </div>
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <StatsSection />
       </div>
     </section>
   );

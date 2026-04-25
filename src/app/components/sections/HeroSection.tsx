@@ -109,17 +109,21 @@ export default function HeroSection() {
                 <motion.div
                   key={image.src}
                   className={`overflow-hidden aspect-square ${
-                    index === 1
-                      ? 'rounded-tr-[120px] sm:rounded-tr-[200px]'
-                      : index === 2
-                        ? 'rounded-bl-[120px] sm:rounded-bl-[200px]'
-                        : 'rounded-none'
+                    index === 0
+                      ? 'rounded-tl-[10px]'
+                      : index === 1
+                        ? 'rounded-tr-[120px] sm:rounded-tr-[200px]'
+                        : index === 2
+                          ? 'rounded-bl-[120px] sm:rounded-bl-[200px]'
+                          : index === 3
+                            ? 'rounded-br-[10px]'
+                            : 'rounded-none'
                   }`}
                 >
                   <ImageWithFallback
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover "
                   />
                 </motion.div>
               ))}
