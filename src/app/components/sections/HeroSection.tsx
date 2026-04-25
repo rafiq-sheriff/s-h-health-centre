@@ -7,7 +7,7 @@ import { fadeInLeft, fadeInRight } from './sectionMotion';
 export default function HeroSection() {
   const heroImages = [
     { src: '/assets/acupuncture.png', alt: 'Acupuncture therapy session' },
-    { src: '/assets/gua-sha.png', alt: 'Gua Sha therapy treatment' },
+    { src: '/assets/hero.png', alt: 'Gua Sha therapy treatment' },
     { src: '/assets/master-tung.png', alt: 'Master Tung acupuncture method' },
     { src: '/assets/electro-acupuncture.png', alt: 'Electro Acupuncture therapy treatment' },
   ];

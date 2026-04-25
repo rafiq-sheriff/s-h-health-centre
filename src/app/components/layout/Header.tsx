@@ -1,17 +1,64 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Menu, Phone, X } from 'lucide-react';
 import { PHONE_TEL } from '../../constants/contact';
 
+const NAV_LINKS = [
+  { href: '#home', label: 'Home' },
+  { href: '#about', label: 'About' },
+  { href: '#doctor', label: 'Our Doctor' },
+  { href: '#services', label: 'Services' },
+  { href: '#contact', label: 'Contact' },
+] as const;
+
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
-  const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#services', label: 'Services' },
-    { href: '#doctor', label: 'Our Doctor' },
-    { href: '#contact', label: 'Contact' },
-  ] as const;
+  useEffect(() => {
+    const getSectionElements = () =>
+      NAV_LINKS.map((link) => {
+        const id = link.href.replace('#', '');
+        return {
+          id,
+          element: document.getElementById(id),
+        };
+      }).filter((section) => section.element);
+
+    const updateActiveSection = () => {
+      const sections = getSectionElements();
+
+      if (sections.length === 0) {
+        return;
+      }
+
+      const scrollPosition = window.scrollY + 120;
+      const firstContentSection = sections.find((section) => section.id !== 'home');
+
+      if (firstContentSection && firstContentSection.element && scrollPosition < firstContentSection.element.offsetTop) {
+        setActiveSection('home');
+        return;
+      }
+
+      const currentSection = sections.reduce((active, section) => {
+        if (!section.element || section.id === 'home') {
+          return active;
+        }
+
+        return scrollPosition >= section.element.offsetTop ? section.id : active;
+      }, 'home');
+
+      setActiveSection(currentSection);
+    };
+
+    updateActiveSection();
+    window.addEventListener('scroll', updateActiveSection, { passive: true });
+    window.addEventListener('resize', updateActiveSection);
+
+    return () => {
+      window.removeEventListener('scroll', updateActiveSection);
+      window.removeEventListener('resize', updateActiveSection);
+    };
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
@@ -25,11 +72,25 @@ export default function Header() {
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a key={link.href} href={link.href} className="text-gray-600 hover:text-[#7AA98C] transition-colors">
+            {NAV_LINKS.map((link) => {
+              const sectionId = link.href.replace('#', '');
+              const isActive = activeSection === sectionId;
+
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  aria-current={isActive ? 'page' : undefined}
+                  className={`transition-colors ${
+                    isActive
+                      ? 'text-[#7AA98C] font-semibold'
+                      : 'text-gray-600 hover:text-[#7AA98C]'
+                  }`}
+                >
                 {link.label}
-              </a>
-            ))}
+                </a>
+              );
+            })}
           </nav>
 
           <a
@@ -59,16 +120,26 @@ export default function Header() {
           }`}
         >
           <div className="flex flex-col gap-2 rounded-xl border border-gray-100 bg-white p-3 shadow-sm">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-[#7AA98C]/10 hover:text-[#6a9879] transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const sectionId = link.href.replace('#', '');
+              const isActive = activeSection === sectionId;
+
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  aria-current={isActive ? 'page' : undefined}
+                  className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                    isActive
+                      ? 'bg-[#7AA98C]/15 text-[#5f8b71]'
+                      : 'text-gray-700 hover:bg-[#7AA98C]/10 hover:text-[#6a9879]'
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
 
             <a
               href={PHONE_TEL}
