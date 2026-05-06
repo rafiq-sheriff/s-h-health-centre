@@ -65,8 +65,7 @@ export default function TestimonialsSection() {
             Hear What Our Patients Say
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            Every review is rated 5 stars, reflecting trusted diagnosis, personalized treatment, and meaningful
-            recovery outcomes.
+          Every review reflects trusted diagnoses, personalized treatments, and meaningful recovery outcomes.
           </p>
         </motion.div>
 
