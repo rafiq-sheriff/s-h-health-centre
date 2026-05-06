@@ -25,7 +25,7 @@ export default function DoctorProfile() {
                 <div className="h-full min-h-[400px] lg:min-h-[500px]">
                   <ImageWithFallback
                     src="/profile.svg"
-                    alt="Dr. A. Soofia Fathima"
+                    alt="A. Soofia Fathima"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -40,7 +40,7 @@ export default function DoctorProfile() {
               {/* Doctor Info */}
               <div className="lg:col-span-3 p-8 lg:p-12">
                 <h3 className="text-3xl font-semibold text-gray-900 mb-2">
-                  Dr. A. Soofia Fathima
+                  A. Soofia Fathima
                 </h3>
                 <p className="text-lg text-[#7AA98C] mb-8">Expert Acupuncturist & Holistic Healer</p>
 
@@ -88,7 +88,7 @@ export default function DoctorProfile() {
 
                 <div className="pt-6 border-t border-gray-200">
                   <p className="text-gray-600 leading-relaxed">
-                    With extensive training and years of hands-on experience, Dr. Fathima brings a compassionate, evidence-based approach to acupuncture and holistic wellness. Her dedication to continuous learning ensures you receive the most effective, up-to-date treatments.
+                    With extensive training and years of hands-on experience, A. Soofia Fathima brings a compassionate, evidence-based approach to acupuncture and holistic wellness. Her dedication to continuous learning ensures you receive the most effective, up-to-date treatments.
                   </p>
                 </div>
               </div>

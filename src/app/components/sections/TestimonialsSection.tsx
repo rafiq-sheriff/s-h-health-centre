@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
     name: 'Violet Misquith',
     designation: 'Verified Patient',
     content:
-      'I had a very good experience at S.H Health Centre. I was suffering from leg pain and headaches, but after taking treatment from Dr. Soofia Fathima, I feel much better. I would definitely recommend everyone to try acupressure and cupping therapy for better health and well-being. Dr. Soofia is an excellent and caring doctor who understands her patients very well.',
+      'I had a very good experience at S.H Health Centre. I was suffering from leg pain and headaches, but after taking treatment from A. Soofia Fathima, I feel much better. I would definitely recommend everyone to try acupressure and cupping therapy for better health and well-being. A. Soofia Fathima is an excellent and caring doctor who understands her patients very well.',
   },
   {
     name: 'Mohamed Hussain',
@@ -37,7 +37,7 @@ const testimonials: Testimonial[] = [
     name: 'Rafiq Sheriff S',
     designation: 'Verified Patient',
     content:
-      'My mother had been suffering from severe allergies for over 10 years and was on multiple medications that caused significant side effects. Many allopathy doctors informed us that her condition could not be fully treated. However, after visiting S.H. Health Centre and consulting Dr. A. Soofia Fathima, her condition improved remarkably. Today, she is completely free from allergy medications and leading a healthy life. We are truly grateful for the care and effective treatment provided.',
+      'My mother had been suffering from severe allergies for over 10 years and was on multiple medications that caused significant side effects. Many allopathy doctors informed us that her condition could not be fully treated. However, after visiting S.H. Health Centre and consulting A. Soofia Fathima, her condition improved remarkably. Today, she is completely free from allergy medications and leading a healthy life. We are truly grateful for the care and effective treatment provided.',
   },
 ];
 
