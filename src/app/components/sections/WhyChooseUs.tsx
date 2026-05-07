@@ -15,7 +15,7 @@ const WHY_CHOOSE_CARDS: readonly WhyChooseCard[] = [
     icon: Stethoscope,
     title: '8+ Years of Experience',
     description:
-      "With years of hands-on Ayurvedic and acupuncture practice, we've helped patients recover naturally through trusted, evidence-informed holistic care.",
+      "With years of Experience in acupuncture practice, we've helped patients recover naturally through trusted, evidence-informed holistic care.",
   },
   {
     icon: Users,

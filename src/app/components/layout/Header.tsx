@@ -65,10 +65,10 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
           <div className="flex items-center">
-            <a href="#home" aria-label="S.H. Health Centre Home" className="inline-flex items-center gap-2 sm:gap-3">
-              <img src="/logo.svg" alt="S.H. Health Centre" className="h-10 w-auto sm:h-12" />
+            <a href="#home" aria-label="S H Health Centre Home" className="inline-flex items-center gap-2 sm:gap-3">
+              <img src="/logo.svg" alt="S H Health Centre" className="h-10 w-auto sm:h-12" />
               <span className="hidden min-[380px]:inline text-sm font-semibold text-gray-900 sm:text-xl">
-                S.H. Health Centre
+                S H Health Centre
               </span>
             </a>
           </div>

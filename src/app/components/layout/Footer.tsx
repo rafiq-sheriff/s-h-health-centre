@@ -15,10 +15,10 @@ export default function Footer() {
         <div className="grid gap-8 border-b border-white/10 py-12 md:grid-cols-12 md:gap-10">
           <div className="md:col-span-5">
             <div className="mb-5 inline-flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-lg shadow-black/15">
-              <img src="/logo.svg" alt="S.H. Health Centre logo" className="h-12 w-auto" />
+              <img src="/logo.svg" alt="S H Health Centre logo" className="h-12 w-auto" />
               <div>
                 <p className="text-sm font-medium uppercase tracking-[0.14em] text-[#5f866e]">Holistic Care</p>
-                <p className="text-xl font-semibold text-gray-900">S.H. Health Centre</p>
+                <p className="text-xl font-semibold text-gray-900">S H Health Centre</p>
               </div>
             </div>
             <p className="max-w-md text-sm leading-relaxed text-gray-300 sm:text-base">
@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-3 py-5 text-xs text-gray-400 sm:flex-row sm:text-sm">
-          <p>&copy; 2026 S.H. Health Centre. All rights reserved.</p>
+          <p>&copy; 2026 S H Health Centre. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <a href="#" className="transition-colors hover:text-[#9bc7ac]">Privacy Policy</a>
             <span aria-hidden className="text-gray-700">|</span>

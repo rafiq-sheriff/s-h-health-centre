@@ -20,7 +20,7 @@ export const CLINIC_HOURS = [
 ] as const;
 
 const defaultWhatsAppMessage =
-  'Hello, I would like to book a consultation at S.H. Health Centre.';
+  'Hello, I would like to book a consultation at S H Health Centre.';
 
 /**
  * Opens WhatsApp chat with the clinic number and an optional pre-filled message.

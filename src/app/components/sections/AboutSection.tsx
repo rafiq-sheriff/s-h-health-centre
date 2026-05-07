@@ -30,7 +30,7 @@ export default function AboutSection() {
             </h2>
             
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              At S.H. Health Centre, we believe in the power of natural healing. Our approach combines ancient wisdom with modern understanding to provide comprehensive care for your body, mind, and spirit.
+              At S H Health Centre, we believe in the power of natural healing. Our approach combines ancient wisdom with modern understanding to provide comprehensive care for your body, mind, and spirit.
             </p>
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
