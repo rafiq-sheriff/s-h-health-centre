@@ -24,8 +24,8 @@ export default function HomePage() {
     <>
       <PageSeo
         path="/"
-        title={`${BUSINESS_NAME} | Acupuncture, Acupressure & Siddha in Bengaluru`}
-        description="Holistic health centre in Kalyan Nagar, Bengaluru: acupuncture, acupressure, Siddha-informed care, and pain support. Book a consultation via WhatsApp or call during our enquiry window."
+        title={`${BUSINESS_NAME} | Acupuncture & Acupressure, Bengaluru`}
+        description="Holistic clinic in Kalyan Nagar, Bengaluru: acupuncture, acupressure, Siddha-informed care & pain support. Book on WhatsApp or call during enquiry hours."
       />
       <FaqJsonLd faqs={SITE_FAQ} />
       <main id="home">

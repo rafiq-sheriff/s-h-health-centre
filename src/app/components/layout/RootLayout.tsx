@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router';
+import GoogleAnalytics from '../analytics/GoogleAnalytics';
 import Header from './Header';
 import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
@@ -10,6 +11,7 @@ import SiteJsonLd from '../seo/SiteJsonLd';
 export default function RootLayout() {
   return (
     <>
+      <GoogleAnalytics />
       <SiteJsonLd />
       <ScrollToTop />
       <div

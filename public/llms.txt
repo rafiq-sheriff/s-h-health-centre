@@ -1,0 +1,21 @@
+# S H Health Centre
+
+Holistic health clinic in Kalyan Nagar, Bengaluru (HRBR 2nd Block), offering acupuncture, acupressure, Siddha-informed consultations, and pain support. MedicalClinic JSON-LD and contact details appear on the live site.
+
+## Canonical entry points
+
+- Home: https://shhealthcentre.com/
+- Services hub: https://shhealthcentre.com/services
+- About: https://shhealthcentre.com/about
+- Contact / booking: https://shhealthcentre.com/contact
+- Blog: https://shhealthcentre.com/blog
+
+## Machine-readable site map
+
+- Sitemap: https://shhealthcentre.com/sitemap.xml
+
+## Policies
+
+- Privacy: https://shhealthcentre.com/privacy-policy
+- Terms: https://shhealthcentre.com/terms-of-service
+- Medical disclaimer: https://shhealthcentre.com/medical-disclaimer
