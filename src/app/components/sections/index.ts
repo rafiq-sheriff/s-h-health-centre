@@ -6,6 +6,7 @@ export { default as DoctorProfile } from './DoctorProfile';
 export { default as ServicesSection } from './ServicesSection';
 export { default as TestimonialsSection } from './TestimonialsSection';
 export { default as WhyChooseUs } from './WhyChooseUs';
+export { default as FaqSection } from './FaqSection';
 export { default as WhatsAppSection } from './WhatsAppSection';
 export { default as ContactSection } from './ContactSection';
 export { default as FinalCTA } from './FinalCTA';

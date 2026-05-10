@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { MapPin, Phone, Mail, Clock4, ArrowUpRight } from 'lucide-react';
 import {
   APPOINTMENT_CALL_WINDOW,
@@ -22,41 +23,56 @@ export default function Footer() {
               </div>
             </div>
             <p className="max-w-md text-sm leading-relaxed text-gray-300 sm:text-base">
-              Experience trusted acupuncture and natural healing support in a calm, patient-centered environment
-              designed for long-term wellness.
+              Trusted acupuncture, acupressure, and holistic healing in Kalyan Nagar, Bengaluru—personalized care for
+              pain support and wellness.
             </p>
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="mt-6 inline-flex items-center gap-2 rounded-full border border-[#7AA98C]/60 bg-[#7AA98C]/10 px-4 py-2 text-sm font-medium text-[#9bc7ac] transition hover:border-[#7AA98C] hover:bg-[#7AA98C]/20 hover:text-white"
             >
               Book a consultation
               <ArrowUpRight className="h-4 w-4" />
-            </a>
+            </Link>
           </div>
 
           <div className="md:col-span-3">
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-[0.12em] text-gray-200">Quick Links</h4>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.12em] text-gray-200">Quick Links</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="#home" className="text-gray-400 transition-colors hover:text-[#9bc7ac]">Home</a>
+                <Link to="/" className="text-gray-400 transition-colors hover:text-[#9bc7ac]">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 transition-colors hover:text-[#9bc7ac]">About Us</a>
+                <Link to="/about" className="text-gray-400 transition-colors hover:text-[#9bc7ac]">
+                  About Us
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 transition-colors hover:text-[#9bc7ac]">Services</a>
+                <Link to="/services" className="text-gray-400 transition-colors hover:text-[#9bc7ac]">
+                  Services
+                </Link>
               </li>
               <li>
-                <a href="#doctor" className="text-gray-400 transition-colors hover:text-[#9bc7ac]">Our Doctor</a>
+                <Link to="/#faqs" className="text-gray-400 transition-colors hover:text-[#9bc7ac]">
+                  FAQs
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 transition-colors hover:text-[#9bc7ac]">Contact</a>
+                <Link to="/blog" className="text-gray-400 transition-colors hover:text-[#9bc7ac]">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-400 transition-colors hover:text-[#9bc7ac]">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="md:col-span-4">
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-[0.12em] text-gray-200">Visit & Contact</h4>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.12em] text-gray-200">Visit & Contact</h3>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-3">
                 <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-[#8ab79b]" />
@@ -84,10 +100,22 @@ export default function Footer() {
 
         <div className="flex flex-col items-center justify-between gap-3 py-5 text-xs text-gray-400 sm:flex-row sm:text-sm">
           <p>&copy; 2026 S H Health Centre. All rights reserved.</p>
-          <div className="flex items-center gap-4">
-            <a href="#" className="transition-colors hover:text-[#9bc7ac]">Privacy Policy</a>
-            <span aria-hidden className="text-gray-700">|</span>
-            <a href="#" className="transition-colors hover:text-[#9bc7ac]">Terms of Service</a>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+            <Link to="/privacy-policy" className="transition-colors hover:text-[#9bc7ac]">
+              Privacy Policy
+            </Link>
+            <span aria-hidden className="text-gray-700 hidden sm:inline">
+              |
+            </span>
+            <Link to="/terms-of-service" className="transition-colors hover:text-[#9bc7ac]">
+              Terms of Service
+            </Link>
+            <span aria-hidden className="text-gray-700 hidden sm:inline">
+              |
+            </span>
+            <Link to="/medical-disclaimer" className="transition-colors hover:text-[#9bc7ac]">
+              Medical Disclaimer
+            </Link>
           </div>
         </div>
       </div>

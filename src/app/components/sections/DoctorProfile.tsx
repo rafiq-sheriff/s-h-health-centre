@@ -6,7 +6,7 @@ import StatsSection from './StatsSection';
 
 export default function DoctorProfile() {
   return (
-    <section id="doctor" className="pt-20 pb-10 bg-white">
+    <section id="doctor" className="scroll-mt-28 pt-20 pb-10 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div {...fadeInUp()} className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-[#7AA98C]/10 rounded-full mb-6">

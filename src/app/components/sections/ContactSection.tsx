@@ -13,7 +13,7 @@ import { fadeInLeft, fadeInRight, fadeInUp } from './sectionMotion';
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20  bg-white">
+    <section id="contact" className="scroll-mt-28 py-20  bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div {...fadeInUp()} className="text-center mb-12 sm:mb-16">
           <div className="inline-block px-4 py-2 bg-[#7AA98C]/10 rounded-full mb-6">
