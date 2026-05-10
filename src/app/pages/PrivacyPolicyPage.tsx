@@ -45,8 +45,32 @@ export default function PrivacyPolicyPage() {
 
             <h2 className="text-xl font-semibold text-gray-900">Cookies and analytics</h2>
             <p>
-              Our site may use basic cookies or analytics to understand traffic and improve performance. You can control
-              cookies through your browser settings.
+              We use Google Analytics 4 (GA4) to understand how visitors use our website so we can improve content and
+              performance. GA4 may set cookies and process limited information about your visit, such as pages viewed,
+              approximate location (country or region), device and browser type, referring source, and a randomly
+              generated identifier. We do not use this data to identify you personally and we do not sell it.
+            </p>
+            <p>
+              You can opt out by installing Google&apos;s{' '}
+              <a
+                href="https://tools.google.com/dlpage/gaoptout"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#5f8b71] hover:underline"
+              >
+                Analytics opt-out browser add-on
+              </a>
+              , using your browser&apos;s cookie controls, or browsing in private/incognito mode. For more on how
+              Google handles data, see{' '}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#5f8b71] hover:underline"
+              >
+                Google&apos;s Privacy Policy
+              </a>
+              .
             </p>
 
             <h2 className="text-xl font-semibold text-gray-900">Third-party services</h2>
