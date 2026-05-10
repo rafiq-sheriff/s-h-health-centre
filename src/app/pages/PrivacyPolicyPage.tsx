@@ -45,10 +45,18 @@ export default function PrivacyPolicyPage() {
 
             <h2 className="text-xl font-semibold text-gray-900">Cookies and analytics</h2>
             <p>
-              We use Google Analytics 4 (GA4) to understand how visitors use our website so we can improve content and
-              performance. GA4 may set cookies and process limited information about your visit, such as pages viewed,
-              approximate location (country or region), device and browser type, referring source, and a randomly
-              generated identifier. We do not use this data to identify you personally and we do not sell it.
+              We use Google Analytics 4 (GA4) to understand how visitors interact with our website. GA4 may collect
+              information such as device type, browser details, pages visited, time spent on pages, and approximate
+              geographic location through cookies and similar technologies. This information helps us improve website
+              performance and user experience. Learn more about how Google uses data here:{' '}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#5f8b71] hover:underline"
+              >
+                https://policies.google.com/privacy
+              </a>
             </p>
             <p>
               You can opt out by installing Google&apos;s{' '}
@@ -60,17 +68,7 @@ export default function PrivacyPolicyPage() {
               >
                 Analytics opt-out browser add-on
               </a>
-              , using your browser&apos;s cookie controls, or browsing in private/incognito mode. For more on how
-              Google handles data, see{' '}
-              <a
-                href="https://policies.google.com/privacy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#5f8b71] hover:underline"
-              >
-                Google&apos;s Privacy Policy
-              </a>
-              .
+              , using your browser&apos;s cookie controls, or browsing in private/incognito mode.
             </p>
 
             <h2 className="text-xl font-semibold text-gray-900">Third-party services</h2>
