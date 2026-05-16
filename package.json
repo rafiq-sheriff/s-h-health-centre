@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "og:image": "node scripts/generate-og-image.mjs",
-    "prebuild": "pnpm run og:image",
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "prebuild": "pnpm run og:image && pnpm run sitemap",
     "build": "pnpm exec tsc && vite build",
     "dev": "vite --port 3000",
     "preview": "vite preview --port 3000"

@@ -31,7 +31,7 @@ export const SERVICE_PAGE_MEDIA: Record<string, ServicePageMedia> = {
   '/pain-management-bengaluru': {
     heroSrc: '/assets/holistic.png',
     heroAlt:
-      'Holistic healing setting—meditation, singing bowl, salt lamp and supportive therapies for pain management at our Bengaluru clinic',
+      'Holistic healing setting meditation, singing bowl, salt lamp and supportive therapies for pain management at our Bengaluru clinic',
     secondarySrc: '/assets/acupressure.png',
     secondaryAlt: 'Hands-on therapeutic approaches as part of a structured pain support plan',
   },

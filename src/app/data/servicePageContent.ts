@@ -198,7 +198,7 @@ export const SERVICE_PAGES: ServicePageDef[] = [
       {
         h2: 'Lifestyle notes (general)',
         paragraphs: [
-          'Gentle mobility, pacing, and ergonomic habits are often discussed as adjuncts—not replacements—for medical treatment. Personal advice is given only in context of your case.',
+          'Gentle mobility, pacing, and ergonomic habits are often discussed as adjuncts not replacements for medical treatment. Personal advice is given only in context of your case.',
         ],
       },
     ],
@@ -210,7 +210,7 @@ export const SERVICE_PAGES: ServicePageDef[] = [
       'Calm, education-first holistic support for people managing psoriasis in Bengaluru. Kalyan Nagar clinic. WhatsApp to book a consultation.',
     h1: 'Holistic Support for People with Psoriasis in Bengaluru',
     intro:
-      'Psoriasis care often requires dermatology-led treatment. Our role is supportive: stress modulation, lifestyle coaching within scope, and therapies that some patients find calming—without replacing prescribed medical therapy.',
+      'Psoriasis care often requires dermatology-led treatment. Our role is supportive: stress modulation, lifestyle coaching within scope, and therapies that some patients find calming without replacing prescribed medical therapy.',
     sections: [
       {
         h2: 'A clear scope of care',
@@ -262,7 +262,7 @@ export const SERVICE_PAGES: ServicePageDef[] = [
       {
         h2: 'Red flags that require urgent care',
         paragraphs: [
-          'Thunderclap headache, new neurological deficits, fever with neck stiffness, head trauma, or sudden worst-ever headache require emergency evaluation—not a clinic session.',
+          'Thunderclap headache, new neurological deficits, fever with neck stiffness, head trauma, or sudden worst-ever headache require emergency evaluation not a clinic session.',
         ],
       },
       {

@@ -88,7 +88,8 @@ export default function DoctorProfile() {
 
                 <div className="pt-6 border-t border-gray-200">
                   <p className="text-gray-600 leading-relaxed">
-                    With extensive training and years of hands-on experience, A. Soofia Fathima brings a compassionate, evidence-based approach to acupuncture and holistic wellness. Her dedication to continuous learning ensures you receive the most effective, up-to-date treatments.
+                    With extensive training and years of hands-on experience, Our 
+                    healer brings a compassionate, evidence-based approach to acupuncture and holistic wellness. Her dedication to continuous learning ensures you receive the most effective, up-to-date treatments.
                   </p>
                 </div>
               </div>

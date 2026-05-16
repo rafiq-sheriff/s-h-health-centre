@@ -22,7 +22,7 @@ export default function ContactPage() {
           <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-2">Contact us</h1>
           <p className="text-lg text-gray-600 max-w-3xl mb-2">
             Visit us in Kalyan Nagar or reach out remotely. For clinical questions, a consultation is the right next
-            step—see our{' '}
+            step see our{' '}
             <Link to="/#faqs" className="text-[#5f8b71] font-medium hover:underline">
               FAQs
             </Link>{' '}

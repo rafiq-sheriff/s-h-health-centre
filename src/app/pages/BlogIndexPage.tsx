@@ -18,7 +18,7 @@ export default function BlogIndexPage() {
       <PageSeo
         path={path}
         title="Wellness Guides (Coming Soon) | S H Health Centre Bengaluru"
-        description="Educational articles on acupuncture, acupressure, pain support, and holistic health in Bengaluru—publishing soon from S H Health Centre."
+        description="Educational articles on acupuncture, acupressure, pain support, and holistic health in Bengaluru publishing soon from S H Health Centre."
       />
       <BreadcrumbJsonLd items={[{ name: 'Home', path: '/' }, { name: 'Blog', path }]} />
 

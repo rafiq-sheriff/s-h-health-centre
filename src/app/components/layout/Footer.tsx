@@ -23,7 +23,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="max-w-md text-sm leading-relaxed text-gray-300 sm:text-base">
-              Trusted acupuncture, acupressure, and holistic healing in Kalyan Nagar, Bengaluru—personalized care for
+              Trusted acupuncture, acupressure, and holistic healing in Kalyan Nagar, Bengaluru personalized care for
               pain support and wellness.
             </p>
             <Link

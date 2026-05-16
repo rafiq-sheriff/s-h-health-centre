@@ -37,7 +37,7 @@ export default function ServicesHubPage() {
                 Our services in Bengaluru
               </h1>
               <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                Evidence-informed holistic care at our Kalyan Nagar clinic—each page explains what to expect, how we work,
+                Evidence-informed holistic care at our Kalyan Nagar clinic each page explains what to expect, how we work,
                 and how to book. Choose a topic below.
               </p>
             </div>

@@ -26,7 +26,7 @@ export default function HeroSection() {
               Holistic Healing in Bengaluru - Acupuncture, Acupressure &amp; Siddha
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-7 sm:mb-8 leading-relaxed">
-              Expert-led acupuncture, acupressure, and natural therapies at our Kalyan Nagar clinic—personalized plans for
+              Expert-led acupuncture, acupressure, and natural therapies at our Kalyan Nagar clinic personalized plans for
               pain support and wellness.
             </p>
 
