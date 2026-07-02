@@ -25,8 +25,9 @@ export default function DoctorProfile() {
                 <div className="h-full min-h-[400px] lg:min-h-[500px]">
                   <ImageWithFallback
                     src="/profile.svg"
-                    alt="A. Soofia Fathima"
+                    alt="A. Soofia Fathima — Expert Acupuncturist at SH Health Centre, Kalyan Nagar Bangalore"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">

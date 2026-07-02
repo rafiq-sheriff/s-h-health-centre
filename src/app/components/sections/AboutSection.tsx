@@ -12,8 +12,11 @@ export default function AboutSection() {
             <div className="rounded-3xl overflow-hidden shadow-xl">
               <ImageWithFallback
                 src="/assets/about.png"
-                alt="Holistic Healing"
+                alt="Inside SH Health Centre — holistic healing environment at Kalyan Nagar, Bengaluru"
                 className="w-full h-auto object-cover"
+                width={600}
+                height={400}
+                loading="lazy"
               />
             </div>
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#7AA98C]/20 rounded-full blur-3xl -z-10"></div>

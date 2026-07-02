@@ -12,9 +12,10 @@ import {
   WhyChooseUs,
 } from '../components/sections';
 import PageSeo from '../components/seo/PageSeo';
-import { FaqJsonLd } from '../components/seo/ExtraJsonLd';
+import { FaqJsonLd, ReviewJsonLd, WebPageJsonLd } from '../components/seo/ExtraJsonLd';
 import { SITE_FAQ } from '../data/faq';
-import { BUSINESS_NAME } from '../constants/site';
+import { TESTIMONIALS, AGGREGATE_RATING } from '../data/testimonials';
+import { SITE_KEYWORDS } from '../constants/site';
 
 /**
  * Marketing homepage: section `id`s match legacy in-page anchors where still used.
@@ -24,10 +25,21 @@ export default function HomePage() {
     <>
       <PageSeo
         path="/"
-        title={`${BUSINESS_NAME} | Acupuncture & Acupressure, Bengaluru`}
-        description="Holistic clinic in Kalyan Nagar, Bengaluru: acupuncture, acupressure, Siddha-informed care & pain support. Book on WhatsApp or call during enquiry hours."
+        title="Best Acupuncture Clinic in Bangalore | SH Health Centre"
+        description="Visit SH Health Centre in Kalyan Nagar, Bangalore for expert acupuncture, acupressure & Siddha care. 8+ years experience. Personalised holistic healing. Book on WhatsApp today."
+        keywords={SITE_KEYWORDS}
       />
       <FaqJsonLd faqs={SITE_FAQ} />
+      <ReviewJsonLd reviews={TESTIMONIALS} aggregateRating={AGGREGATE_RATING} />
+      <WebPageJsonLd
+        type="WebPage"
+        path="/"
+        name="Best Acupuncture Clinic in Bangalore | SH Health Centre"
+        description="Expert acupuncture, acupressure, Siddha & Varma therapy in Kalyan Nagar, Bangalore."
+        datePublished="2026-05-10"
+        dateModified="2026-07-02"
+        speakableSelectors={['h1', '#faqs']}
+      />
       <main id="home">
         <HeroSection />
         <AboutSection />

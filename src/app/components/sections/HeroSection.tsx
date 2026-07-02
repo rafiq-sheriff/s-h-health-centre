@@ -6,10 +6,10 @@ import { fadeInLeft, fadeInRight } from './sectionMotion';
 
 export default function HeroSection() {
   const heroImages = [
-    { src: '/assets/acupuncture.png', alt: 'Acupuncture therapy session' },
-    { src: '/assets/hero.png', alt: 'Gua Sha therapy treatment' },
-    { src: '/assets/master-tung.png', alt: 'Master Tung acupuncture method' },
-    { src: '/assets/electro-acupuncture.png', alt: 'Electro Acupuncture therapy treatment' },
+    { src: '/assets/acupuncture.png', alt: 'Acupuncture therapy session at SH Health Centre, Kalyan Nagar Bangalore', priority: true },
+    { src: '/assets/hero.png', alt: 'Gua Sha holistic therapy at SH Health Centre Bangalore', priority: false },
+    { src: '/assets/master-tung.png', alt: 'Master Tung acupuncture method at our Kalyan Nagar clinic', priority: false },
+    { src: '/assets/electro-acupuncture.png', alt: 'Electro-acupuncture treatment at SH Health Centre, Bengaluru', priority: false },
   ];
 
   return (
@@ -125,6 +125,8 @@ export default function HeroSection() {
                     src={image.src}
                     alt={image.alt}
                     className="w-full h-full object-cover "
+                    loading={image.priority ? 'eager' : 'lazy'}
+                    fetchPriority={image.priority ? 'high' : 'auto'}
                   />
                 </motion.div>
               ))}

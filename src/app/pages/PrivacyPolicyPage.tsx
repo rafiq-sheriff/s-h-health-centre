@@ -11,8 +11,8 @@ export default function PrivacyPolicyPage() {
     <>
       <PageSeo
         path={path}
-        title={`Privacy Policy | ${BUSINESS_NAME}`}
-        description="How S H Health Centre handles information you share through our website and digital contact channels in Bengaluru."
+        title={`Privacy Policy | ${BUSINESS_NAME}, Bangalore`}
+        description="How SH Health Centre handles your information when you use our website or contact our Kalyan Nagar, Bangalore clinic by phone, email, or WhatsApp."
       />
       <BreadcrumbJsonLd items={[{ name: 'Home', path: '/' }, { name: 'Privacy Policy', path }]} />
 

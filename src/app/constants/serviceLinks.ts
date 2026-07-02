@@ -5,7 +5,7 @@ export const SERVICE_TITLE_TO_PATH: Record<string, string> = {
   Acupuncture: '/acupuncture-treatment-bengaluru',
   'Electro Acupuncture': '/acupuncture-treatment-bengaluru',
   Acupressure: '/acupressure-treatment-bengaluru',
-  'Varma Therapy': '/pain-management-bengaluru',
+  'Varma Therapy': '/varma-treatment-bengaluru',
   Sujok: '/pain-management-bengaluru',
   Auricular: '/acupuncture-treatment-bengaluru',
   'Scalp Acupuncture': '/acupuncture-treatment-bengaluru',
@@ -18,3 +18,4 @@ export const SERVICE_TITLE_TO_PATH: Record<string, string> = {
 export function serviceDetailPath(title: string): string | undefined {
   return SERVICE_TITLE_TO_PATH[title];
 }
+

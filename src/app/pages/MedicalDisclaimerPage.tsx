@@ -10,8 +10,8 @@ export default function MedicalDisclaimerPage() {
     <>
       <PageSeo
         path={path}
-        title={`Medical Disclaimer | ${BUSINESS_NAME}, Bengaluru`}
-        description="Important medical disclaimer for visitors to S H Health Centre website. Not a substitute for emergency care or professional diagnosis."
+        title={`Medical Disclaimer | ${BUSINESS_NAME}, Bangalore`}
+        description="Important medical disclaimer for visitors to SH Health Centre, Kalyan Nagar, Bangalore. This website is not a substitute for emergency care or professional medical diagnosis."
       />
       <BreadcrumbJsonLd items={[{ name: 'Home', path: '/' }, { name: 'Medical Disclaimer', path }]} />
 

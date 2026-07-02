@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /og-image.jpg
+Allow: /logo.svg
+Allow: /profile.svg
+
+# Block non-indexable admin / utility routes
+Disallow: /404
 
 Sitemap: https://shhealthcentre.com/sitemap.xml

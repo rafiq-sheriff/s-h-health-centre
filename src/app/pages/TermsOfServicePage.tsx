@@ -10,8 +10,8 @@ export default function TermsOfServicePage() {
     <>
       <PageSeo
         path={path}
-        title={`Terms of Service | ${BUSINESS_NAME}`}
-        description="Terms for using the S H Health Centre website and digital enquiry channels in Bengaluru."
+        title={`Terms of Service | ${BUSINESS_NAME}, Bangalore`}
+        description="Terms for using the SH Health Centre website and digital enquiry channels. Our holistic clinic is located in Kalyan Nagar, Bengaluru."
       />
       <BreadcrumbJsonLd items={[{ name: 'Home', path: '/' }, { name: 'Terms of Service', path }]} />
 

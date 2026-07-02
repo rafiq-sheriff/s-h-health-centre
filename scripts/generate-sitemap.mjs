@@ -27,13 +27,14 @@ function readServicePaths() {
 const STATIC_ROUTES = [
   { path: '/', priority: 1.0, changefreq: 'weekly' },
   { path: '/services', priority: 0.9, changefreq: 'weekly' },
-  { path: '/about', priority: 0.8, changefreq: 'monthly' },
-  { path: '/contact', priority: 0.85, changefreq: 'monthly' },
-  { path: '/blog', priority: 0.6, changefreq: 'monthly' },
+  { path: '/about', priority: 0.85, changefreq: 'monthly' },
+  { path: '/contact', priority: 0.9, changefreq: 'monthly' },
+  { path: '/blog', priority: 0.65, changefreq: 'weekly' },
   { path: '/privacy-policy', priority: 0.3, changefreq: 'yearly' },
   { path: '/terms-of-service', priority: 0.3, changefreq: 'yearly' },
-  { path: '/medical-disclaimer', priority: 0.3, changefreq: 'yearly' },
+  { path: '/medical-disclaimer', priority: 0.35, changefreq: 'yearly' },
 ];
+
 
 const servicePaths = readServicePaths();
 
