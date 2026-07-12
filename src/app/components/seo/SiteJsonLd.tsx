@@ -88,7 +88,7 @@ function buildGraph() {
     name: BUSINESS_NAME,
     alternateName: 'S H Health Centre Kalyan Nagar',
     description:
-      'Best acupuncture clinic in Bangalore offering expert acupuncture, acupressure, Siddha, and Varma therapy. Located in Kalyan Nagar, serving patients across Bengaluru since 2016.',
+      'Best acupuncture clinic in Bangalore offering expert acupuncture, acupressure, and Varma therapy. Located in Kalyan Nagar, serving patients across Bengaluru since 2016.',
     url: SITE_ORIGIN,
     image: DEFAULT_OG_IMAGE,
     logo: `${SITE_ORIGIN}/logo.svg`,
@@ -105,7 +105,6 @@ function buildGraph() {
     medicalSpecialty: [
       'Acupuncture',
       'Acupressure',
-      'Siddha Medicine',
       'Varma Therapy',
       'Holistic Medicine',
       'Pain Management',
@@ -157,11 +156,10 @@ function buildGraph() {
     description: `${DOCTOR_NAME} is an expert acupuncturist and holistic healer based in Bangalore with 8+ years of experience. Qualifications: ${DOCTOR_QUALIFICATIONS}. Member of World Skill Council (WSC).`,
     url: `${SITE_ORIGIN}/about`,
     image: `${SITE_ORIGIN}/profile.svg`,
-    medicalSpecialty: ['Acupuncture', 'Acupressure', 'Siddha Medicine', 'Varma Therapy'],
+    medicalSpecialty: ['Acupuncture', 'Acupressure', 'Varma Therapy'],
     knowsAbout: [
       'Acupuncture',
       'Acupressure',
-      'Siddha Medicine',
       'Varma Therapy',
       'Holistic Medicine',
       'Pain Management',
@@ -187,7 +185,7 @@ function buildGraph() {
     name: BUSINESS_NAME,
     url: SITE_ORIGIN,
     description:
-      'Official website of S H Health Centre — best acupuncture, acupressure, Siddha & Varma therapy clinic in Kalyan Nagar, Bangalore.',
+      'Official website of S H Health Centre — best acupuncture, acupressure & Varma therapy clinic in Kalyan Nagar, Bangalore.',
     inLanguage: 'en-IN',
     publisher: {
       '@type': 'Organization',

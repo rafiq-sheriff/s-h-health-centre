@@ -46,7 +46,7 @@ export const SOCIAL_PROFILES: string[] = [
 
 /** Global site-level keywords for meta keywords tag (supplementary signal). */
 export const SITE_KEYWORDS =
-  'acupuncture clinic Bangalore, acupressure clinic Bangalore, Siddha treatment Bangalore, Varma therapy Bangalore, holistic healing Kalyan Nagar, best acupuncture clinic Kalyan Nagar, pain management Bengaluru, A Soofia Fathima';
+  'acupuncture clinic Bangalore, acupressure clinic Bangalore, Varma therapy Bangalore, holistic healing Kalyan Nagar, best acupuncture clinic Kalyan Nagar, pain management Bengaluru, A Soofia Fathima';
 
 /** Areas served — used in schema and footer. */
 export const AREAS_SERVED = [

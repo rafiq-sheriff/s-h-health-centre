@@ -22,12 +22,7 @@ export const SERVICE_PAGE_MEDIA: Record<string, ServicePageMedia> = {
     secondarySrc: '/assets/nadi.png',
     secondaryAlt: 'Traditional pulse-based assessment supporting individualised acupressure sessions in Bangalore',
   },
-  '/siddha-treatment-bengaluru': {
-    heroSrc: '/assets/varma-therapy.png',
-    heroAlt: 'Siddha-informed holistic consultation at SH Health Centre, Kalyan Nagar Bangalore',
-    secondarySrc: '/assets/nadi.png',
-    secondaryAlt: 'Traditional assessment as part of Siddha-informed holistic care planning in Bangalore',
-  },
+
   '/varma-treatment-bengaluru': {
     heroSrc: '/assets/varma-therapy.png',
     heroAlt: 'Varma therapy treatment session at SH Health Centre, Kalyan Nagar Bangalore',

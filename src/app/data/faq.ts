@@ -30,7 +30,7 @@ export const SITE_FAQ: FaqItem[] = [
       'Many people can receive acupuncture safely, but some conditions and medications need extra caution. Please share your full medical history; we may ask you to consult your physician when appropriate.',
   },
   {
-    question: 'Do you provide Siddha or acupressure without acupuncture?',
+    question: 'Do you offer acupressure without acupuncture?',
     answer:
       'We offer several holistic approaches. What we recommend depends on your assessment. We will explain options clearly before any procedure.',
   },

@@ -24,8 +24,8 @@ export default function ServicesHubPage() {
       <PageSeo
         path={path}
         title="Best Holistic Treatments in Bangalore | SH Health Centre"
-        description="Explore acupuncture, acupressure, Siddha & Varma therapy at our Kalyan Nagar clinic, Bangalore. Personalised evidence-informed care. Book your consultation today."
-        keywords="holistic treatments Bangalore, acupuncture clinic Kalyan Nagar, acupressure Bangalore, Siddha treatment Bengaluru, Varma therapy Bangalore, SH Health Centre services"
+        description="Explore acupuncture, acupressure & Varma therapy at our Kalyan Nagar clinic, Bangalore. Personalised evidence-informed care. Book your consultation today."
+        keywords="holistic treatments Bangalore, acupuncture clinic Kalyan Nagar, acupressure Bangalore, Varma therapy Bangalore, SH Health Centre services"
       />
       <BreadcrumbJsonLd items={[{ name: 'Home', path: '/' }, { name: 'Services', path }]} />
       <ItemListJsonLd items={listItems} />
@@ -55,7 +55,7 @@ export default function ServicesHubPage() {
                 Best holistic treatments in Bangalore
               </h1>
               <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                Evidence-informed holistic care at our Kalyan Nagar clinic — acupuncture, acupressure, Siddha, and Varma
+                Evidence-informed holistic care at our Kalyan Nagar clinic — acupuncture, acupressure, and Varma
                 therapy. Each page explains what to expect, how we work, and how to book. Choose a topic below.
               </p>
             </div>

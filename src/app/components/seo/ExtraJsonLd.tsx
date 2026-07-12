@@ -66,13 +66,12 @@ export function PhysicianJsonLd() {
       'A. Soofia Fathima is an expert acupuncturist and holistic healer based in Bangalore with 8+ years of experience. Qualifications: D.Acu, M.Acu, PhD (Pursuing). Member of World Skill Council (WSC).',
     url: canonicalUrl('/about'),
     image: `${SITE_ORIGIN}/profile.svg`,
-    medicalSpecialty: ['Acupuncture', 'Acupressure', 'Siddha Medicine', 'Varma Therapy'],
+    medicalSpecialty: ['Acupuncture', 'Acupressure', 'Varma Therapy'],
     knowsAbout: [
       'Acupuncture',
       'Acupressure',
       'Holistic medicine',
       'Pain management',
-      'Siddha Medicine',
       'Varma Therapy',
       'Traditional Indian Medicine',
     ],
@@ -285,7 +284,7 @@ export function ItemListJsonLd({
     '@type': 'ItemList',
     name: `Holistic Treatments at ${BUSINESS_NAME}, Bangalore`,
     description:
-      'Expert acupuncture, acupressure, Siddha, and Varma therapy services at SH Health Centre, Kalyan Nagar, Bangalore.',
+      'Expert acupuncture, acupressure, and Varma therapy services at SH Health Centre, Kalyan Nagar, Bangalore.',
     numberOfItems: items.length,
     itemListElement: items.map((item) => ({
       '@type': 'ListItem',

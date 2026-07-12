@@ -26,7 +26,7 @@ export default function HomePage() {
       <PageSeo
         path="/"
         title="Best Acupuncture Clinic in Bangalore | SH Health Centre"
-        description="Visit SH Health Centre in Kalyan Nagar, Bangalore for expert acupuncture, acupressure & Siddha care. 8+ years experience. Personalised holistic healing. Book on WhatsApp today."
+        description="Visit SH Health Centre in Kalyan Nagar, Bangalore for expert acupuncture, acupressure & Varma therapy. 8+ years experience. Personalised holistic healing. Book on WhatsApp today."
         keywords={SITE_KEYWORDS}
       />
       <FaqJsonLd faqs={SITE_FAQ} />
@@ -35,7 +35,7 @@ export default function HomePage() {
         type="WebPage"
         path="/"
         name="Best Acupuncture Clinic in Bangalore | SH Health Centre"
-        description="Expert acupuncture, acupressure, Siddha & Varma therapy in Kalyan Nagar, Bangalore."
+        description="Expert acupuncture, acupressure & Varma therapy in Kalyan Nagar, Bangalore."
         datePublished="2026-05-10"
         dateModified="2026-07-02"
         speakableSelectors={['h1', '#faqs']}

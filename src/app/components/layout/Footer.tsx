@@ -14,7 +14,6 @@ import { CLINIC_GEO, SOCIAL_PROFILES } from '../../constants/site';
 const TREATMENT_LINKS = [
   { label: 'Acupuncture', to: '/acupuncture-treatment-bengaluru' },
   { label: 'Acupressure', to: '/acupressure-treatment-bengaluru' },
-  { label: 'Siddha Treatment', to: '/siddha-treatment-bengaluru' },
   { label: 'Varma Therapy', to: '/varma-treatment-bengaluru' },
   { label: 'Pain Management', to: '/pain-management-bengaluru' },
   { label: 'Migraine Support', to: '/migraine-treatment-bengaluru' },
@@ -61,7 +60,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="max-w-md text-sm leading-relaxed text-gray-300 sm:text-base">
-              Best acupuncture, acupressure, Siddha & Varma therapy clinic in Kalyan Nagar, Bengaluru — personalised holistic healing since 2016.
+              Best acupuncture, acupressure & Varma therapy clinic in Kalyan Nagar, Bengaluru — personalised holistic healing since 2016.
             </p>
             <Link
               to="/contact"

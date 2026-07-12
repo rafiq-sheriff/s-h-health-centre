@@ -148,65 +148,10 @@ export const SERVICE_PAGES: ServicePageDef[] = [
     relatedServices: [
       '/acupuncture-treatment-bengaluru',
       '/pain-management-bengaluru',
-      '/siddha-treatment-bengaluru',
-    ],
-  },
-  {
-    path: '/siddha-treatment-bengaluru',
-    seoTitle: 'Best Siddha Treatment in Bangalore | SH Health Centre',
-    metaDescription:
-      'Traditional Siddha-informed holistic consultations in Bangalore. Patient-centred care at Kalyan Nagar, SH Health Centre. Safe, ethical, transparent. Enquire today.',
-    keywords:
-      'Siddha treatment Bangalore, Siddha medicine Bangalore, traditional Siddha clinic Kalyan Nagar, holistic Siddha care Bengaluru',
-    serviceSchemaType: 'Siddha Medicine',
-    h1: 'Best Siddha Treatment in Bangalore',
-    intro:
-      'Siddha medicine is a classical Indian tradition. In our clinic setting, we focus on practical, ethical, and patient-centered guidance that respects both traditional principles and modern safety expectations.',
-    sections: [
-      {
-        h2: 'What "Siddha-informed care" means in our clinic',
-        paragraphs: [
-          'We emphasize clear communication, informed consent, and realistic goals. Traditional concepts are explained in plain language so you can make confident decisions.',
-          'We do not encourage stopping prescribed medication without your doctor\u2019s approval.',
-        ],
-      },
-      {
-        h2: 'Who may benefit from a Siddha consultation in Bangalore',
-        paragraphs: [
-          'People often visit for chronic symptom support, lifestyle-related strain, and holistic planning alongside conventional treatment. Suitability is determined only after assessment.',
-        ],
-      },
-      {
-        h2: 'How we assess and plan care',
-        paragraphs: [
-          'We take a structured history, review prior reports if you bring them, and outline options. If your needs fall outside our scope, we will say so transparently.',
-        ],
-      },
-      {
-        h2: 'Working with your existing doctors',
-        paragraphs: [
-          'We welcome collaboration. Bring a summary of diagnoses and medicines when possible. Emergency symptoms always belong in urgent medical care, not a wellness consultation.',
-        ],
-      },
-    ],
-    faqItems: [
-      {
-        question: 'What is Siddha medicine?',
-        answer:
-          'Siddha is one of the oldest Indian traditional medicine systems, originating in Tamil Nadu. It uses herbal preparations, dietary guidance, and physical therapies to promote wellness.',
-      },
-      {
-        question: 'Can Siddha treatment replace my current medication?',
-        answer:
-          'No. We never advise stopping prescribed medication without your treating physician\u2019s approval. Our role is supportive and complementary.',
-      },
-    ],
-    relatedServices: [
       '/varma-treatment-bengaluru',
-      '/acupuncture-treatment-bengaluru',
-      '/pain-management-bengaluru',
     ],
   },
+
   {
     path: '/varma-treatment-bengaluru',
     seoTitle: 'Best Varma Treatment in Bangalore | SH Health Centre',
@@ -217,7 +162,7 @@ export const SERVICE_PAGES: ServicePageDef[] = [
     serviceSchemaType: 'Varma Therapy',
     h1: 'Best Varma Treatment in Bangalore',
     intro:
-      'Varma therapy (Varmam) is an ancient healing tradition rooted in the Siddha system of medicine. It works on vital points across the body to support pain relief, nerve function, and overall wellness. At S H Health Centre in Kalyan Nagar, Bengaluru, our practitioner brings deep knowledge of Varma principles to every consultation.',
+      'Varma therapy (Varmam) is an ancient healing tradition. It works on vital points across the body to support pain relief, nerve function, and overall wellness. At S H Health Centre in Kalyan Nagar, Bengaluru, our practitioner brings deep knowledge of Varma principles to every consultation.',
     sections: [
       {
         h2: 'What is Varma therapy and how does it work',
@@ -252,7 +197,7 @@ export const SERVICE_PAGES: ServicePageDef[] = [
       {
         question: 'What is Varma therapy?',
         answer:
-          'Varma (Varmam) therapy is an ancient Siddha healing practice that works on vital energy points in the body to support pain relief, nerve function, and overall wellness.',
+          'Varma (Varmam) therapy is an ancient healing practice that works on vital energy points in the body to support pain relief, nerve function, and overall wellness.',
       },
       {
         question: 'Is Varma therapy painful?',
@@ -266,9 +211,9 @@ export const SERVICE_PAGES: ServicePageDef[] = [
       },
     ],
     relatedServices: [
-      '/siddha-treatment-bengaluru',
       '/pain-management-bengaluru',
       '/acupuncture-treatment-bengaluru',
+      '/acupressure-treatment-bengaluru',
     ],
   },
   {
@@ -430,7 +375,7 @@ export const SERVICE_PAGES: ServicePageDef[] = [
     relatedServices: [
       '/acupuncture-treatment-bengaluru',
       '/pain-management-bengaluru',
-      '/siddha-treatment-bengaluru',
+      '/varma-treatment-bengaluru',
     ],
   },
   {
@@ -851,7 +796,7 @@ export const SERVICE_PAGES: ServicePageDef[] = [
     ],
     relatedServices: [
       '/pain-management-bengaluru',
-      '/siddha-treatment-bengaluru',
+      '/varma-treatment-bengaluru',
       '/acupuncture-treatment-bengaluru',
     ],
   },

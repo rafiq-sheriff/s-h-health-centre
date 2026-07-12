@@ -23,7 +23,7 @@ export default function HeroSection() {
             transition={fadeInLeft().transition}
           >
             <h1 className="text-[clamp(1.75rem,6vw,2.90rem)] font-semibold text-gray-900 mb-5 sm:mb-6 leading-[1.15]">
-              Holistic Healing in Bengaluru - Acupuncture, Acupressure &amp; Siddha
+              Holistic Healing in Bengaluru - Acupuncture, Acupressure &amp; Varma Therapy
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-7 sm:mb-8 leading-relaxed">
               Expert-led acupuncture, acupressure, and natural therapies at our Kalyan Nagar clinic personalized plans for

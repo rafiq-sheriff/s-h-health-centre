@@ -33,7 +33,7 @@ export default function AboutPage() {
           <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-2">About S H Health Centre</h1>
           <p className="text-lg text-gray-600 max-w-3xl">
             A Bengaluru holistic health practice focused on careful assessment, transparent communication, and therapies
-            such as acupuncture, acupressure, Siddha, and Varma therapy when appropriate for you.
+            such as acupuncture, acupressure, and Varma therapy when appropriate for you.
           </p>
         </div>
         <AboutSection />
