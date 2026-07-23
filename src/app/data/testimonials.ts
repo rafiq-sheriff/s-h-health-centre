@@ -61,6 +61,14 @@ export const TESTIMONIALS: Testimonial[] = [
     content:
       'An outstanding experience with Dr. Soofia Fathima. What stood out to me most was their ability to simplify complex medical information and lay out all of my treatment options clearly. I never felt pressured, and they patiently answered every single one of my questions. I highly recommend this practice to anyone looking for a caring and skilled doctor.',
   },
+  {
+    name: 'Atlas Growing',
+    designation: 'Verified Patient',
+    rating: 5,
+    datePublished: '2026-07-20',
+    content:
+      'I felt sooooo much better after my sessions.',
+  },
 ];
 
 /** Aggregate rating computed from TESTIMONIALS */
