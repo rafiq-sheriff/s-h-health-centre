@@ -1,9 +1,10 @@
-import { MessageCircle, Phone } from 'lucide-react';
+import { Instagram, MessageCircle, Phone } from 'lucide-react';
 import { PHONE_TEL, whatsappHref } from '../../constants/contact';
+import { INSTAGRAM_URL } from '../../constants/site';
 
 /**
  * Floating CTAs pinned to the bottom-right corner.
- * WhatsApp on top, Call below (vertical stack on all breakpoints).
+ * Instagram, WhatsApp, and Call actions (vertical stack on all breakpoints).
  */
 export default function StickyActions() {
   const wa = whatsappHref(
@@ -22,6 +23,18 @@ export default function StickyActions() {
       aria-label="Quick contact"
     >
       <div className="pointer-events-auto flex max-w-[calc(100vw-2rem)] flex-col items-end gap-3 sm:max-w-none">
+        <a
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Follow us on Instagram"
+          className={`${pillBase} ${iconCircle} gap-0 bg-gradient-to-tr from-[#f58529] via-[#dd2a7b] to-[#8134af] text-white sm:justify-start sm:gap-3`}
+        >
+          <Instagram className="h-6 w-6 shrink-0 sm:h-5 sm:w-5" aria-hidden />
+          <span className="hidden text-sm font-semibold tracking-wide whitespace-nowrap sm:inline">
+            Instagram
+          </span>
+        </a>
         <a
           href={wa}
           target="_blank"

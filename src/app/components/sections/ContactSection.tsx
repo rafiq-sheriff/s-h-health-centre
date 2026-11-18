@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook, ExternalLink } from 'lucide-react';
 import {
   APPOINTMENT_CALL_WINDOW,
   CLINIC_ADDRESS,
@@ -9,6 +9,7 @@ import {
   PHONE_DISPLAY,
   PHONE_TEL,
 } from '../../constants/contact';
+import { INSTAGRAM_URL, FACEBOOK_URL } from '../../constants/site';
 import { fadeInLeft, fadeInRight, fadeInUp } from './sectionMotion';
 
 export default function ContactSection() {
@@ -68,6 +69,42 @@ export default function ContactSection() {
                   <a href={EMAIL_MAILTO} className="text-gray-600 hover:text-[#7AA98C] transition-colors">
                     {EMAIL_ADDRESS}
                   </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-[#F5F3EF] to-white rounded-2xl p-6 sm:p-8 shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500/10 to-blue-500/10 flex items-center justify-center flex-shrink-0">
+                  <Instagram className="w-5 h-5 text-[#E1306C]" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-gray-900 mb-2">Connect With Us</h3>
+                  <div className="flex flex-wrap gap-2.5">
+                    <a
+                      href={INSTAGRAM_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-xl border border-pink-200 bg-pink-50/60 px-3 py-1.5 text-xs font-medium text-[#E1306C] hover:bg-pink-100 transition-colors"
+                      aria-label="Visit SH Health Centre on Instagram"
+                    >
+                      <Instagram className="w-3.5 h-3.5" />
+                      <span>Instagram</span>
+                      <ExternalLink className="w-3 h-3 opacity-60" aria-hidden />
+                    </a>
+                    <a
+                      href={FACEBOOK_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-xl border border-blue-200 bg-blue-50/60 px-3 py-1.5 text-xs font-medium text-[#1877F2] hover:bg-blue-100 transition-colors"
+                      aria-label="Visit SH Health Centre on Facebook"
+                    >
+                      <Facebook className="w-3.5 h-3.5" />
+                      <span>Facebook</span>
+                      <ExternalLink className="w-3 h-3 opacity-60" aria-hidden />
+                    </a>
+                  </div>
+                  <p className="text-xs text-gray-500 mt-2">Follow our pages for daily wellness tips, health insights &amp; clinic updates</p>
                 </div>
               </div>
             </div>

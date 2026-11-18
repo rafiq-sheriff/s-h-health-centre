@@ -35,11 +35,13 @@ export const DOCTOR_MEMBERSHIP = 'World Skill Council (WSC)';
 // ─── Social & Brand ──────────────────────────────────────────────────────────
 
 export const TWITTER_HANDLE = '@shhealthcentre';
+export const INSTAGRAM_URL = 'https://www.instagram.com/shhealthcentre';
+export const FACEBOOK_URL = 'https://www.facebook.com/people/SH-Health-Centre/61570674995080';
 
 /** sameAs social profile URLs — update when accounts are live. */
 export const SOCIAL_PROFILES: string[] = [
-  'https://www.facebook.com/shhealthcentre',
-  'https://www.instagram.com/shhealthcentre',
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
 ];
 
 // ─── SEO Targeting ───────────────────────────────────────────────────────────

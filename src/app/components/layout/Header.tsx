@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router';
-import { Menu, Phone, X } from 'lucide-react';
+import { Menu, Phone, X, Instagram, Facebook } from 'lucide-react';
 import { PHONE_TEL } from '../../constants/contact';
+import { INSTAGRAM_URL, FACEBOOK_URL } from '../../constants/site';
 import { isNavItemActive } from './navActive';
 import { useNavScrollSpy } from './useNavScrollSpy';
 import type { NavSpySection } from './useNavScrollSpy';
@@ -65,13 +66,33 @@ export default function Header() {
             })}
           </nav>
 
-          <a
-            href={PHONE_TEL}
-            className="hidden sm:inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-[#7AA98C] text-white rounded-full hover:bg-[#6a9879] transition-colors"
-          >
-            <Phone className="w-4 h-4" />
-            <span className="hidden sm:inline">Call Now</span>
-          </a>
+          <div className="hidden sm:flex items-center gap-2.5">
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow SH Health Centre on Instagram"
+              className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-gray-200 text-gray-600 hover:text-[#E1306C] hover:border-[#E1306C]/40 hover:bg-pink-50/50 transition-colors"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
+            <a
+              href={FACEBOOK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow SH Health Centre on Facebook"
+              className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-gray-200 text-gray-600 hover:text-[#1877F2] hover:border-[#1877F2]/40 hover:bg-blue-50/50 transition-colors"
+            >
+              <Facebook className="w-4 h-4" />
+            </a>
+            <a
+              href={PHONE_TEL}
+              className="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 bg-[#7AA98C] text-white rounded-full hover:bg-[#6a9879] transition-colors text-sm font-medium"
+            >
+              <Phone className="w-4 h-4" />
+              <span className="hidden sm:inline">Call Now</span>
+            </a>
+          </div>
 
           <button
             type="button"
@@ -88,7 +109,7 @@ export default function Header() {
         <nav
           id="mobile-navigation"
           className={`md:hidden overflow-hidden transition-all duration-200 ${
-            isMobileMenuOpen ? 'max-h-[28rem] pb-4' : 'max-h-0'
+            isMobileMenuOpen ? 'max-h-[30rem] pb-4' : 'max-h-0'
           }`}
         >
           <div className="flex flex-col gap-2 rounded-xl border border-gray-100 bg-white p-3 shadow-sm">
@@ -106,13 +127,35 @@ export default function Header() {
               );
             })}
 
-            <a
-              href={PHONE_TEL}
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#7AA98C] px-4 py-2.5 text-sm font-medium text-white hover:bg-[#6a9879] transition-colors"
-            >
-              <Phone className="h-4 w-4" />
-              <span>Call Now</span>
-            </a>
+            <div className="pt-2 mt-1 border-t border-gray-100 flex items-center justify-between gap-2">
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg border border-pink-200 bg-pink-50/60 px-2.5 py-2 text-xs font-medium text-[#E1306C] hover:bg-pink-100/60 transition-colors"
+                aria-label="Follow SH Health Centre on Instagram"
+              >
+                <Instagram className="h-4 w-4" />
+                <span>Instagram</span>
+              </a>
+              <a
+                href={FACEBOOK_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg border border-blue-200 bg-blue-50/60 px-2.5 py-2 text-xs font-medium text-[#1877F2] hover:bg-blue-100/60 transition-colors"
+                aria-label="Follow SH Health Centre on Facebook"
+              >
+                <Facebook className="h-4 w-4" />
+                <span>Facebook</span>
+              </a>
+              <a
+                href={PHONE_TEL}
+                className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg bg-[#7AA98C] px-2.5 py-2 text-xs font-medium text-white hover:bg-[#6a9879] transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                <span>Call</span>
+              </a>
+            </div>
           </div>
         </nav>
       </div>

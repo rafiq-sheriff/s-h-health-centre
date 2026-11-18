@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { MapPin, Phone, Mail, Clock4, ArrowUpRight, ExternalLink } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock4, ArrowUpRight, ExternalLink, Instagram, Facebook } from 'lucide-react';
 import {
   APPOINTMENT_CALL_WINDOW,
   CLINIC_ADDRESS,
@@ -9,7 +9,7 @@ import {
   PHONE_TEL,
   whatsappHref,
 } from '../../constants/contact';
-import { CLINIC_GEO, SOCIAL_PROFILES } from '../../constants/site';
+import { CLINIC_GEO, SOCIAL_PROFILES, INSTAGRAM_URL, FACEBOOK_URL } from '../../constants/site';
 
 const TREATMENT_LINKS = [
   { label: 'Acupuncture', to: '/acupuncture-treatment-bengaluru' },
@@ -72,26 +72,28 @@ export default function Footer() {
             </Link>
 
             {/* Social links */}
-            {/* <div className="mt-5 flex items-center gap-3">
+            <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
-                href={SOCIAL_PROFILES[0]}
+                href={INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray-400 transition hover:border-white/40 hover:text-white"
-                aria-label="SH Health Centre on Facebook"
+                className="inline-flex items-center gap-2 rounded-full border border-pink-500/30 bg-pink-500/10 px-3.5 py-1.5 text-xs font-medium text-pink-200 transition hover:border-pink-500/60 hover:bg-pink-500/20 hover:text-white"
+                aria-label="Follow SH Health Centre on Instagram"
               >
-                <span aria-hidden>📘</span> Facebook
+                <Instagram className="h-4 w-4 text-pink-400" aria-hidden />
+                <span>Instagram</span>
               </a>
               <a
-                href={SOCIAL_PROFILES[1]}
+                href={FACEBOOK_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray-400 transition hover:border-white/40 hover:text-white"
-                aria-label="SH Health Centre on Instagram"
+                className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3.5 py-1.5 text-xs font-medium text-blue-200 transition hover:border-blue-500/60 hover:bg-blue-500/20 hover:text-white"
+                aria-label="Follow SH Health Centre on Facebook"
               >
-                <span aria-hidden>📷</span> Instagram
+                <Facebook className="h-4 w-4 text-blue-400" aria-hidden />
+                <span>Facebook</span>
               </a>
-            </div> */}
+            </div>
           </div>
 
           {/* Quick Links */}
